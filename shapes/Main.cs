@@ -27,6 +27,7 @@ namespace shapes
                 rbtnRightTriangle.Checked = false;
 
                 triangles = frmTriangle.countTriangles;
+                lblCountRightTriangles.Text = triangles.ToString();
                 
             }
         }
@@ -40,6 +41,7 @@ namespace shapes
                 rbtnSquare.Checked = false;
 
                 squares = frmSquare.countSquares;
+                lblCountSquares.Text = squares.ToString();
             }
         }
 
@@ -51,7 +53,8 @@ namespace shapes
                 frmRectangle.ShowDialog();
                 rbtnRectangle.Checked = false;
 
-                
+                rectangles = frmRectangle.countRectangles;
+                lblCountRectangles.Text = rectangles.ToString();
             }
 
         }
@@ -63,6 +66,10 @@ namespace shapes
                 AddCircle frmCircle = new AddCircle();
                 frmCircle.ShowDialog();
                 rbtnCircle.Checked = false;
+
+                circles = frmCircle.countCircles;
+                lblCountCircles.Text = circles.ToString();
+
             }
         }
     }

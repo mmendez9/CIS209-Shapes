@@ -16,9 +16,11 @@ namespace shapes
         {
             InitializeComponent();
         }
-
+        public int countCircles;
         private void button1_Click(object sender, EventArgs e)
         {
+            countCircles++;
+
             double radio;
             if (double.TryParse(tbxRadio.Text, out radio))
             {

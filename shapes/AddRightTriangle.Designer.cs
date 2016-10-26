@@ -39,6 +39,8 @@
             this.lblPerimeter = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,14 +57,14 @@
             // 
             this.tbxSide1.Location = new System.Drawing.Point(57, 13);
             this.tbxSide1.Name = "tbxSide1";
-            this.tbxSide1.Size = new System.Drawing.Size(100, 20);
+            this.tbxSide1.Size = new System.Drawing.Size(33, 20);
             this.tbxSide1.TabIndex = 1;
             // 
             // tbxSide2
             // 
             this.tbxSide2.Location = new System.Drawing.Point(57, 39);
             this.tbxSide2.Name = "tbxSide2";
-            this.tbxSide2.Size = new System.Drawing.Size(100, 20);
+            this.tbxSide2.Size = new System.Drawing.Size(33, 20);
             this.tbxSide2.TabIndex = 3;
             // 
             // label2
@@ -78,9 +80,9 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 84);
+            this.label3.Location = new System.Drawing.Point(12, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(78, 33);
             this.label3.TabIndex = 4;
             this.label3.Text = "Hypotenuse";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -89,7 +91,7 @@
             // 
             this.lblHypotenuse.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblHypotenuse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblHypotenuse.Location = new System.Drawing.Point(85, 79);
+            this.lblHypotenuse.Location = new System.Drawing.Point(99, 84);
             this.lblHypotenuse.Name = "lblHypotenuse";
             this.lblHypotenuse.Size = new System.Drawing.Size(100, 23);
             this.lblHypotenuse.TabIndex = 5;
@@ -137,7 +139,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(191, 20);
+            this.btnAdd.Location = new System.Drawing.Point(163, 22);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 10;
@@ -145,11 +147,31 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(96, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "cm";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(96, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "cm";
+            // 
             // AddRightTriangle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 213);
+            this.ClientSize = new System.Drawing.Size(468, 202);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblPerimeter);
             this.Controls.Add(this.label5);
@@ -184,5 +206,7 @@
         private System.Windows.Forms.Label lblPerimeter;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
