@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RightTriangle.cs" />
     <EmbeddedResource Include="AddCircle.resx">
       <DependentUpon>AddCircle.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,11 +16,11 @@ namespace shapes
         {
             InitializeComponent();
         }
-
         public int countCircles;
-
         private void button1_Click(object sender, EventArgs e)
         {
+            countCircles++;
+
             double radio;
             if (double.TryParse(tbxRadio.Text, out radio))
             {
@@ -31,8 +31,6 @@ namespace shapes
                 // Area
                 double ar = Math.PI * Math.Pow(radio, 2);
                 lblAreaC.Text = ar.ToString("f2");
-
-                countCircles++;
             }
             else
                 MessageBox.Show("Missing or not numeric", "Diameter Error",
