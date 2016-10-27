@@ -21,7 +21,6 @@ namespace shapes
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            countTriangles++;
 
             double side1, side2;
             if (double.TryParse(tbxSide1.Text, out side1) && double.TryParse(tbxSide2.Text, out side2))
@@ -40,7 +39,7 @@ namespace shapes
                 // Perimeter
                 double p = side1 + side2 + hy;
                 lblPerimeter.Text = p.ToString("f2");
-
+                countTriangles++;
             }
             else
                 MessageBox.Show("Sides missing or not numeric", " Sides Error",

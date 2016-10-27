@@ -17,6 +17,8 @@ namespace shapes
             InitializeComponent();
         }
 
+        public int countRectangles;
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             double side1, side2;
@@ -29,6 +31,8 @@ namespace shapes
                 // Area
                 double ar = side1 * side2;
                 lblAreaR.Text = ar.ToString("f2");
+
+                countRectangles++;
             }
             else
                 MessageBox.Show("Sides missing or not numeric", " Sides Error",
